@@ -26,13 +26,13 @@ header {
     /* border: solid blue 2px; */
     background-color: white;
     border-radius: 30px;
-    padding: 0 30px;
+    padding: 0 35px;
 }
 
 nav ul li {
     list-style: none;
-    height: 90px;
-    width: min-content;
+    height: 100%;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -55,28 +55,29 @@ nav ul li {
     width: 20px;
     height: 20px;
     position: absolute;
-    background-color: transparent;
-    transform: translate(57px, 20px);
-    border-top-left-radius: 60px;
-    box-shadow: -5px -5px 0px 1px var(--bgc);
+    background-color: white;
+    transform: translate(58px, 20px);
+    border-top-left-radius: 100%;
+    box-shadow: -5px -5px 0px 2px var(--bgc);
 }
 .indicator::before {
     content: '';
     width: 20px;
     height: 20px;
     position: absolute;
-    background-color: transparent;
-    transform: translate(-26px, 20px);
-    border-top-right-radius: 100px;
-    box-shadow: 5px -5px 0px 1px var(--bgc);
+    background-color: white;
+    transform: translate(-28px, 20px);
+    border-top-right-radius: 100%;
+    box-shadow: 5px -5px 0px 2px var(--bgc);
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
     height: 100%;
+    gap: 0;
+    justify-content: space-around;
     margin: auto;
     align-items: center;
 }
@@ -99,7 +100,7 @@ nav {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: all 500ms linear;
+    transition: all 300ms linear;
 }
 
 .icon ion-icon {
@@ -122,7 +123,7 @@ a {
     font-weight: 500;
     color: black;
 }
-
+/*
 .nav-li:nth-child(1).active ~ .indicator {
     transform: translateY(-40px) translateX(calc(-177px - 0px));
 }
@@ -138,3 +139,4 @@ a {
 .nav-li:nth-child(5).active ~ .indicator {
     transform: translateY(-40px) translateX(calc(-177px + 352px));
 }
+*/
